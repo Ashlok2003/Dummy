@@ -1,0 +1,36 @@
+.sidebar {
+    width: 250px;
+    background: #ffffff;
+    padding: 16px;
+    position: fixed;
+    height: calc(100vh - 64px);
+    top: 64px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    padding: 12px;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+.sidebar li.active,
+.sidebar li:hover {
+    background: #00a3ff;
+    border-radius: 8px;
+}
+
+.icon {
+    margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+}
